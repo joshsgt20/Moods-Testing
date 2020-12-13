@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <title>Tuto</title>
+</head>
+
+
+
+
+<style>
+    #search {
+        border-radius: 30px;
+        border: 2px solid black;
+    }
+
+    #button {
+        background-color: aqua;
+        border: 0px solid black;
+        height: 30px;
+        border-radius: 30px;
+        cursor: pointer;
+    }
+</style>
+<body style=" background-color: rgb(4, 41, 255);">
+    <input type="search" value="" id="search" onchange="openPage()">
+    <input type="button" id="button" onclick="ouvrirPage()" value="Search">
+
+    <script>
+        function openPage() {
+            var x = document.getElementById("search").value;
+
+            if (x === "dog") {
+                window.open("dog.html");
+            }
+
+            if (x === "cat") {
+                window.open("cat.html");
+            }
+
+
+            if (x === "french") {
+                window.open("Search.html");
+            }
+
+        }
+    </script>
+
+</body>
+</html>
+
