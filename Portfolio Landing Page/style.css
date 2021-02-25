@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bebas Neue', cursive;
+}
+
+main{
+    color: hsl(180, 100%, 98%)
+    
+}
+
+.landing{
+    min-height: 100vh;
+    background: url("Image.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 0rem 5rem;
+
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 10vh;
+}
+
+.nav-links{
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li{
+    padding-left: 5rem;
+    font-size: 1.5rem;
+}
+
+#logo{
+    font-weight: lighter;
+    font-size: 2rem;
+}
+
+.big-text{
+    position: absolute;
+    top: 22%;
+    left: 50%;
+    transform: translate(-50%, -22%);
+    font-size: 5rem;
+    color: hsl(9, 90%, 15%);
+    text-align: center;
+}
+
+.intro{
+    background-color: black;
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider{
+    background-color: #cc7e4a;
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(100%);
+}
+
+
+.intro-text{
+    color: #f8bf98;
+    font-size: 3rem;
+
+}
+
+.hide{
+    background: black;
+    overflow: hidden;
+ 
+}
+
+.hide span{
+    transform: translateY(100%);
+    display: inline-block;
+}

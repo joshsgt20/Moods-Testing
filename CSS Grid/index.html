@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="grid.css">
+</head>
+<body>
+
+    <p>Further than this, you can use 'grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));. This would make each grid take up 300px, until it's not available anymore, so it changes to 1fr.
+        It is essentially flex-wrap.</p>
+    <section id="gallery">
+    
+        <div class="box7">Box 7</div>
+        
+        <div class="box8">Box 8</div>
+        
+        <div class="box9">Box 9</div>
+        
+        </section>
+
+
+    
+<p>Can either use first method, where you define the amount of columns/rows and select each
+    div using 'grid-column-start'. Here you would start from the lines - so a grid with 2 columns has 3 lines.<br>
+    To define it, use 'grid-column-start' and 'grid-column-end'. Or, can <strong>simplify to just 'grid-column 1/3</strong>.<br>
+    Can do the exact same for rows, using 'grid-row'. <br>
+    To simplify code, can use 'grid-template-columns: repeat(3, 20%)'. You can write 'grid-template-columns: repeat(autofit (or-autofill), 400px) to make it responsive (like flex-wrap)'<br>
+
+    <strong>Sometimes you must combine both columns and rows as the page will automatically lay them out in the wrong way.</strong>
+    <br>Can add 'grid-column-gap' and to rows to space things out.
+</p>
+<br>
+ <section id="template">
+
+    <div class="box1">Box 1</div>
+
+    <div class="box2">Box 2</div>
+
+    <div class="box3">Box 3</div>
+
+ </section>
+
+<br>
+
+<p>The other (easier) method is using 'grid-area: name' where the name can be anything you want.
+<br>Here, once you have named each box with 'grid-area', you show it in the section itself, using 'grid-template-areas'.<br>
+<strong>You define each row by using quotes " " and write each name of the box for where it needs to be.</strong> To stretch a box, just 
+write its name multiple times. For an empty space, just use a fullstop .
+Can use 'justify-items' and 'align-items' when in the section to show where the item will be in its grid.<br>
+To effect just one specific grid, use 'align-self' for that specific division.<br>
+<strong>Can define each grid as a flex-container, and go on to edit them from there.</strong></p>
+<br>
+
+<section id="gridarea">
+
+<div class="box4">Box 4</div>
+
+<div class="box5">Box 5</div>
+
+<div class="box6">Box 6</div>
+
+</section>
+
+<embed src="test.html" style="width:500px; height: 300px;">
+    
+
+</body>
+</html>
+
+
